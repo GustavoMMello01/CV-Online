@@ -74,6 +74,12 @@ a {
 		gap: 7rem;
 	}
 }
+
+.containerQrCode{
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+
 .profile {
 	grid-column: 1 / -1;
 	margin-bottom: 2rem;
