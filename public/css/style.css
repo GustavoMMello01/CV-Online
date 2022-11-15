@@ -66,18 +66,25 @@ a {
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 }
+
+.containerQRCode{
+	max-width: 900px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 10rem;
+	background: #070707;
+	grid-template-columns: 2fr 1fr;
+	gap: 4rem;
+}
+
 @media only screen and (max-width: 768px) {
-	.container {
+	.container, .containerQRCode{
 		width: 100%;
 		grid-template-columns: 1fr;
 		padding: 3rem;
 		gap: 7rem;
 	}
-}
-
-.containerQrCode{
-	grid-column: 1 / -1;
-	margin-bottom: 2rem;
 }
 
 .profile {
