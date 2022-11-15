@@ -8,7 +8,7 @@ app.use(express.static("public"));
 app.set('views', './views');
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname +  "/public/index.html")
+    res.sendFile(__dirname +  "/views/index.html")
 })
 
 app.get("/qrcode", (req, res) => {
