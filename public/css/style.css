@@ -5,17 +5,31 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 :root {
 	--primary-color: #ff7613;
 	--text-color: #727171;
+	--background-color: white;
+	--font-white-color: black;
 }
+
+.dark-theme{
+	--background-color: black;
+	--font-white-color: white;
+}
+
+#night{
+	cursor: pointer;
+	width: 20px;
+}
+
 html {
 	font-size: 10px;
 }
 body {
 	font-family: Inter, sans-serif;
-	background-color: black;
-	color: white;
+	background-color: var(--background-color);
+	color: var(--font-white-color);
 }
 
 /* common styles */
@@ -24,7 +38,7 @@ img {
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: var(--font-white-color);
 }
 .description {
 	margin-top: 1rem;
@@ -45,7 +59,7 @@ a {
 }
 .item_title {
 	font-size: 1.6rem;
-	color: white;
+	color: var(--font-white-color);
 	font-weight: 500;
 	margin: 0.8rem 0;
 }
@@ -62,7 +76,7 @@ a {
 	margin: 0 auto;
 	display: grid;
 	padding: 5rem;
-	background: #070707;
+	background: var(--background-color);
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 }
@@ -73,7 +87,7 @@ a {
 	margin: 0 auto;
 	display: grid;
 	padding: 10rem;
-	background: #070707;
+	background: var(--background-color);
 	grid-template-columns: 2fr 1fr;
 	gap: 4rem;
 }
@@ -127,7 +141,7 @@ a {
 	max-width: 250px;
 }
 .profile_name_firstName {
-	color: white;
+	color: var(--font-white-color);
 	font-weight: 200;
 	font-size: clamp(2rem, 8vw, 4rem);
 	text-transform: uppercase;
@@ -155,6 +169,13 @@ a {
 .downloadBtn:hover {
 	color: var(--primary-color);
 }
+
+.night_mode{
+	cursor: pointer;
+	justify-content: right;
+	align-items: flex-end;
+}
+
 @media only screen and (max-width: 768px) {
 	.profile_container {
 		flex-direction: column;
@@ -227,7 +248,7 @@ a {
 	gap: 0.5rem;
 	align-items: center;
 	justify-content: flex-start;
-	color: white;
+	color: var(--font-white-color);
 }
 
 .social_item:hover {
