@@ -1,8 +1,7 @@
 window.onload = function () {
-    var night_icon = document.getElementById(night);
+    var night_icon = document.getElementById("night");
 
     night_icon.onclick = function(){
-        document.body.classList("dark-theme")
-        console.log("OLA") 
+        document.body.classList.toggle("dark-theme") 
     }
 }
