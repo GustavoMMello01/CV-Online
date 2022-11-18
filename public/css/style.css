@@ -32,6 +32,14 @@ body {
 	color: var(--font-white-color);
 }
 
+body.scale-cv{
+	--h1-font-size: 0.938rem;
+	--h2-font-size: 0.938rem;
+	--h3-font-size: 0.875rem;
+	--normal-font-size: 1.5rem;
+
+}
+
 /* common styles */
 img {
 	width: 100%;

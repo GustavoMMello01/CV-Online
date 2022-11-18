@@ -10,8 +10,9 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="area-cv">
         <div class="profile">
+            <img src="images/moon.png" id="night" alt="moon">
             <div class="profile_container">
                 <div class="profile_image">
                     <img src="images/profile-pic.png" alt="Gustavo Mello">
@@ -20,7 +21,6 @@
                     <h1 class="profile_name">
                         <span class="profile_vorname">Gustavo Moreira de</span>
                         <span class="profile_nachname">Mello</span> 
-                        <img src="images/moon.png" id="night" alt="moon">
                     </h1>
                     <p class="profile_title">Software Developer</p>
                     <p class="description">I am a fourth year undergraduate student at FACENS in
@@ -36,7 +36,7 @@
                         for Facens at Babson University's Collaborative Student
                         Network and I am a member of the GDG (Google Developers
                         Groups) in my hometown of Sorocaba.</p>
-                        <a class="downloadBtn" href="../cv.pdf" download="Gustavo_Mello_CV.pdf">Download Resume</a>
+                        <!-- <a class="downloadBtn" id="export-pdf">Download Resume</a> -->
                 </div>
             </div>
         </div>
@@ -246,5 +246,6 @@
         feather.replace()
     </script>
     <script src="js/index.js"></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
 </body>
 </html>
